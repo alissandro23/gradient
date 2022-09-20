@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 25px;
+    padding: 100px 200px;
+    background-color: rgb(245, 230, 255);
+}
+
+.control {
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+.control-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-add-btn {
+    border: none;
+    background-color: transparent;
+    color: #6BED72;
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.control-colors-title {
+    color: rgb(160, 160, 160);
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.control-colors-data {
+    width: 25%;
+    padding-top: 10px;
+    padding: 5px;
+}
+
+.control-colors-body .control-colors-row:first-child .control-colors-data {
+    padding-top: 20px;
+}
+
+.control-colors-color {
+    display: block;
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 2px 10px #0004;
+}
+
+.control-colors-data > * {
+    width: 100%;
+}
+
+.control-colors-action-delete {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 21px;
+    color: hsl(356, 100%, 63%);
+    cursor: pointer;
+}
+
+.control-colors-action-delete:hover {
+    color: hsl(356, 100%, 43%);
+}
+
+.gradient-body {
+    width: 100%;
+    height: 100%;
+}
+
+.code {
+    grid-column: span 2;
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    padding: 60px 30px;
+}
+
+.color-messages {
+    margin-top: 20px;
+}
+
+.messages {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.message-error {
+    color: #f00;
+}
+
+.code-body {
+    
+}
+
