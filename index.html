@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="app">
+        <aside class="control">
+            <div class="control-heading">
+                <h3 class="control-title">GRADIENT</h3> 
+                <button class="control-add-btn">+</button>
+            </div>
+            <div class="color-messages">
+                <p class="message message-error">You need to have at least 2 colors for gradient to work</p>
+            </div>
+            <table cellspacing="0" class="control-colors">
+                <thead class="control-colors-head">
+                    <tr class="control-colors-row">
+                        <th class="control-colors-title">Color</th>
+                        <th class="control-colors-title">HEX</th>
+                        <th class="control-colors-title">%</th>
+                        <th class="control-colors-title">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody class="control-colors-body">
+                    <tr class="control-colors-row" data-row="colors">
+                        <td class="control-colors-data">
+                            <span class="control-colors-color"></span>
+                        </td>
+                        <td class="control-colors-data">
+                            <input type="text" class="control-colors-hex-input" value="0057B8">
+                        </td>
+                        <td class="control-colors-data">
+                            <input type="range" class="control-colors-percentage-input" value="0">
+                        </td>
+                        <td class="control-colors-data">
+                            <button class="control-colors-action-delete">&times;</button>
+                        </td>
+                    </tr>
+                    <tr class="control-colors-row" data-row="colors">
+                        <td class="control-colors-data">
+                            <span class="control-colors-color"></span>
+                        </td>
+                        <td class="control-colors-data">
+                            <input type="text" class="control-colors-hex-input" value="FFD700">
+                        </td>
+                        <td class="control-colors-data">
+                            <input type="range" class="control-colors-percentage-input" value="100">
+                        </td>
+                        <td class="control-colors-data">
+                            <button class="control-colors-action-delete">&times;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <main class="gradient">
+            <div class="gradient-body"></div>
+        </main>
+        <footer class="code">
+            <p class="code-body">background: linear-gradient(to right, #18eaff 0%, #ff00bd 100%);</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
